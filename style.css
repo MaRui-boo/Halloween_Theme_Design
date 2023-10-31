@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Playpen+Sans:wght@500&family=Roboto+Mono:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+section {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background: #0b061f; */
+	background: rgb(201, 80, 10);
+}
+
+span {
+	font-family: 'Fruktur', cursive;
+	letter-spacing: 3px;
+}
+
+.spider {
+	opacity: 0.7;
+	height: 500px;
+	position: absolute;
+	margin-top: auto;
+	animation: animateSpider 15s ease-in-out infinite;
+}
+
+.web {
+	position: absolute;
+	top: 100;
+	right: -5;
+	height: 200px;
+}
+
+@keyframes animateSpider {
+
+	0%,
+	100% {
+		transform: translateY(-300px);
+	}
+
+	50% {
+		transform: translateY(-150px);
+	}
+}
+
+.pumpkin {
+	padding-bottom: 190px;
+	opacity: 0.5;
+	width: 300px;
+	/* position: absolute; */
+	top: 300px;
+	right: 180px;
+	animation: animatePumpkin 4s ease-in-out infinite;
+}
+
+.bat {
+	overflow: hidden;
+	opacity: 0.5;
+	width: 500px;
+	position: absolute;
+	bottom: 100px;
+	left: 200px;
+	scale: 0.5;
+	animation: animateBat 4s ease-in-out infinite;
+}
+
+@keyframes animateBat {
+
+	0%,
+	100% {
+		transform: translateY(-70px);
+	}
+
+	50% {
+		transform: translateY(50px);
+	}
+}
+
+@keyframes animatePumpkin {
+
+	0%,
+	100% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(30px);
+	}
+}
+
+.cloud {
+	overflow: hidden;
+	color: black;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	mix-blend-mode: screen;
+}
+
+.spiderweb {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	mix-blend-mode: screen;
+}
+
+h2 {
+	bottom: 200px;
+	left: 450px;
+	position: relative;
+	font-size: 10vw;
+	font-weight: 50;
+	display: flex;
+	color: #0e3742;
+	text-shadow: none;
+	animation: animate 2s infinite linear;
+
+
+}
+
+p {
+	right: 500px;
+	font-weight: 100;
+	font-size: 25px;
+	position: relative;
+	display: flex;
+	color: #0e3742;
+	text-shadow: none;
+	animation: animate 10s infinite linear;
+	font-family: 'Playpen Sans', cursive;
+}
+
+@keyframes animate {
+
+	0%,
+	18%,
+	20%,
+	50.1%,
+	60%,
+	65.1%,
+	80%,
+	90.1%,
+	92% {
+		color: rgba(255, 255, 255, 0.1);
+		text-shadow: none;
+	}
+
+	18.1%,
+	20.1%,
+	30%,
+	50%,
+	60.1%,
+	65%,
+	80.1%,
+	90%,
+	92.1%,
+	100% {
+		color: #0b061f;
+		/* text-shadow: 0 0 10px #0b061f,
+										0 0 20px #0b061f,
+										0 0 40px #0b061f,
+										0 0 80px #0b061f,
+										0 0 160px #0b061f; */
+	}
+}
